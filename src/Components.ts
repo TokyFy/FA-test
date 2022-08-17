@@ -1,5 +1,5 @@
-abstract class Components {
-  protected constructor(protected wrapper: HTMLElement) {}
+abstract class Components<T extends HTMLElement = HTMLElement> {
+  protected constructor(protected wrapper: T) {}
 
   abstract render: () => void
 }
